@@ -1,0 +1,150 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #2F3035;
+    background-image: url(images/background-adare-restaurant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+header {
+    height: 118px;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.338); 
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+main {
+    height: 400px;
+    text-align: center;
+    padding-top: 80px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.728);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 84px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-decoration: none; */
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+    color: rgb(198, 198, 198);
+}
+
+.maps {
+    padding-bottom: 100px;
+}
+
+
+
+/* Thêm các styles cho điện thoại di động */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: auto; /* Thay đổi background-size cho ảnh nền */
+    }
+
+    .container {
+        width: 100%; /* Đảm bảo rằng container chiếm toàn bộ chiều rộng của màn hình */
+        padding: 10px; /* Thêm padding cho phần nội dung để tạo khoảng trắng xung quanh */
+    }
+
+    header {
+        height: auto; /* Đảm bảo chiều cao của header tự động thích ứng */
+    }
+
+    .menu-toggle {
+        display: block; /* Hiển thị menu-toggle khi trang web có kích thước nhỏ hơn 600px */
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.338);
+        text-align: center;
+        color: white;
+    }
+
+    nav {
+        display: none; /* Ẩn nav khi trang web có kích thước nhỏ hơn 600px */
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+    }
+
+    main {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 36px; /* Giảm kích thước font cho điện thoại */
+    }
+
+    p {
+        font-size: 14px; /* Giảm kích thước font cho điện thoại */
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    nav a {
+        display: block; /* Hiển thị mỗi liên kết trên một dòng riêng biệt */
+        padding: 5px 0; /* Thêm khoảng cách giữa các liên kết */
+    }
+
+    maps {
+        padding-bottom: 50px; /* Giảm khoảng cách dưới bản đồ */
+    }
+}
